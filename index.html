@@ -106,7 +106,7 @@ opacity:0;
 
 <h1> Gacha giảm giá Tarot từ việc cmt feedback ytho </h1>
 
-<input id="bill" placeholder="Nhập mã bill">
+<input id="bill" placeholder="Nhập tên fb của ng dp vào đâyyy">
 <button onclick="gacha()">Quayyy</button>
 
 <div id="popup">
@@ -130,12 +130,12 @@ function gacha(){
 let bill=document.getElementById("bill").value.trim();
 
 if(bill===""){
-alert("Nhập mã bill đi ng dpp của emm!");
+alert("Nhập tên fb đi ng dpp của emm!");
 return;
 }
 
 if(localStorage.getItem("bill_"+bill)){
-alert("Mã bill này đã quay ròiiii!");
+alert("Ng dp đã quay ròiiii!");
 return;
 }
 
@@ -160,7 +160,7 @@ prize=12;
 localStorage.setItem("bill_"+bill,true);
 
 document.getElementById("message").innerHTML=
-"🎉 Chúc mừng ng dp với<br>mã bill <b>"+bill+"</b><br> đã trúng <b>"+prize+"%</b> giảm giá 💖Hãyyy chụp lại gửi ytho nhé";
+"🎉 Chúc mừng ng dp với<br>tên fb <b>"+bill+"</b><br> đã trúng <b>"+prize+"%</b> giảm giá 💖Hãyyy chụp lại gửi ytho nhé";
 
 document.getElementById("popup").style.display="block";
 
@@ -199,6 +199,3 @@ heart.remove();
 
 </body>
 </html>
-
-
-
